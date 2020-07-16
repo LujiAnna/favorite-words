@@ -6,13 +6,14 @@ console.log('--- loading: display-all.js');
 const displayHandler = (message = '', arrayToDisplay = words) => {
   debugger;
   const combineStrings = (acc, next) => {
-    return _;
+    acc+'\n'+next;
+      return  acc+`\n`+next;
+    }
+    const alertMessage = arrayToDisplay
+      .reduce(combineStrings,"");
+      message='all words : ';
+    alert(message + alertMessage);
   }
-  const alertMessage = arrayToDisplay
-    ._(_, _);
-  alert(_);
-};
-
 
 /* about default parameters
   https://codeburst.io/understanding-default-parameters-in-javascript-5f3c4dcfc838
