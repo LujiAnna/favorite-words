@@ -3,15 +3,18 @@ console.log('--- loading: display-all.js');
 
 // reverse engineering!
 //   the handler has no tests, study the demo to write this function
- const displayHandler = (message = '', arrayToDisplay = words) => {
+const displayHandler = (message = '', arrayToDisplay = words) => {
   debugger;
   const combineStrings = (acc, next) => {
-    return acc+'\n'+next;
-  }
-  const alertMessage = 'the words is : '+arrayToDisplay;
-  alert(alertMessage);
-};
+    acc+'\n'+next;
+      return  acc+`\n`+next;
+    }
+    const alertMessage = arrayToDisplay
+      .reduce(combineStrings,"");
+      message='all words : ';
+    alert(message + alertMessage);
 
+  }
 
 /* about default parameters
   https://codeburst.io/understanding-default-parameters-in-javascript-5f3c4dcfc838
