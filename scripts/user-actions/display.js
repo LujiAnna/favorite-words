@@ -13,7 +13,6 @@ const displayHandler = (message = '', arrayToDisplay = words) => {
       .reduce(combineStrings,"");
       message='all words : ';
     alert(message + alertMessage);
-
   }
 
 /* about default parameters
