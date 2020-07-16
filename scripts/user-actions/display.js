@@ -6,11 +6,10 @@ console.log('--- loading: display-all.js');
 const displayHandler = (message = '', arrayToDisplay = words) => {
   debugger;
   const combineStrings = (acc, next) => {
-    return _;
+    return acc+'\n'+next;
   }
-  const alertMessage = arrayToDisplay
-    ._(_, _);
-  alert(_);
+  const alertMessage = 'the words is : '+arrayToDisplay;
+  alert(alertMessage);
 };
 
 
