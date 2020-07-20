@@ -2,19 +2,19 @@
 console.log('--- loading: exists.js');
 
 const existsHandler = () => {
-  debugger;
-  const userInput = prompt('');
-  if (_) {
-    return;
-  }
+	debugger;
+	const userInput = prompt('find if the word exist');
+	if (userInput === null) {
+		return;
+	}
 
-  const equalsUserInput = (entry) => {
-    return _;
-  }
-  const itExists = words._(_);
-  if (itExists) {
-    alert(``);
-  } else {
-    alert(``);
-  }
+	const equalsUserInput = (entry) => {
+		return entry === userInput;
+	};
+	const itExists = words.find(equalsUserInput);
+	if (itExists) {
+		alert(`'${userInput}' exist`);
+	} else {
+		alert(`'${userInput}' not exist`);
+	}
 };
